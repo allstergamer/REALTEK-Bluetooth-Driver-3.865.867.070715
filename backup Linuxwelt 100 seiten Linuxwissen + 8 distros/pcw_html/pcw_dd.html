@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>LinuxWelt Ausgabe 1/2018 - Anleitungen: dd für ISO-Dateien</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Language" content="de" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="stylesheet" href="pcw_style.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="js/tsort.js"></script>
+</head>
+<body>
+<div id="pagewrapper">
+<div id="header_logo"><a href="../index.html"></a></div>
+<div id="header"></div>
+<div id="header_shadow"></div>
+
+  <div id="sidebar">
+    <ul>
+    <li><a href="../index.html">&Uuml;bersicht</a></li>
+    <li><a href="pcw_distris.html">Systeme<br/>auf DVD</a></li>
+    <li><a href="pcw_software.html">Software auf <br/>DVD</a></li>
+    <li><a href="pcw_extras.html">Extras und Tools</a></li>
+    <li><a href="pcw_anleitungen.html">Anleitungen</a></li>
+    <li><a href="pcw_ebook.html">LinuxWelt-Ebook</a>
+    <li><a href="pcw_jahrgang.html">LinuxWelt Jahrgang 2017</a></li>     
+    <li><a href="pcw_check.html">Wahl-O-Mat<br/>Distributionen</a></li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="abo">
+      <a href="http://www.idgshop.de/linuxwelt-magazin-abo-shop.htm?websale8=idg&amp;ci=linuxwelt" target="_blank"><img src="static_pics/pcw_abo.jpg" width="153"
+      alt="linuxabo"/></a>
+      <a href="http://www.idgshop.de/linuxwelt-magazin-abo-shop.htm?websale8=idg&amp;ci=linuxwelt" target="_blank">LinuxWelt im Abo</a>
+    </div>
+    <br/>
+    <br/>
+    <div id="sociallinks">
+      <a href="http://www.pcwelt.de" target="_blank"><img src="static_pics/www.png" width="119" alt="PC WELT Im Web"/></a>
+      <a href="http://www.facebook.com/pcwelt" target="_blank"><img src="static_pics/facebook.png" width="119" alt="PC WELT auf Facebook"/></a>
+      <a href="http://twitter.com/pcwelt" target="_blank"><img src="static_pics/twitter.png" width="119" alt="PC WELT auf Twitter"/></a>
+    </div>
+  </div>
+
+  <div id="main">
+<br /><br />
+<div class="headline"><span class="left"></span><span class="inner">
+ISO-Datei auf einen USB-Stick schreiben
+</span><span class="right"></span></div>
+<br />
+<p>
+ISO-Dateien von Linux-Distributionen und Live-Systemen können fortgeschrittene Anwender ohne andere Programme einfach mit dem Kommandozeilentool <em>dd</em> auf einen USB-Stick oder eine Speicherkarte transferieren. Anschließend kann ein Rechner von diesem Datenträger, um das Linux-System oder die Distribution live zu nutzen oder zu installieren.</p>
+<p><b>So geht's: </b>
+Bei dieser Methode müssen Sie genau aufpassen, dass Sie das
+richtige Medium zum Beschreiben angeben, um nicht versehentlich eine Partition
+auf der Festplatte zu überschreiben. Folgendermaßen gehen Sie dabei vor: Stecken
+Sie Ihren USB-Stick an den Rechner an, und öffnen Sie ein Terminal-Fenster.<br />
+Unter Ubuntu/Debian verrät der Befehl <i>dmesg</i>, welchen Device-Node das System dem USB-Stick zugeordnet hat.
+Alternativ warten Sie mit dem Anstecken des USB-Sticks und tippen zunächst in einem Terminal-Fenster<br /><br />
+<code>tail -f /var/log/messages</code>
+<br /><br />
+um die Kernelmeldungen live mit zu verfolgen. Wenn Sie jetzt den Stick anstecken, erhalten Sie auch hier in
+der Konsole eine Ausgabe, in der Sie unter anderem auch den Gerätenamen (beispielsweise
+sdb1) lesen.<br />
+Um nun das Image auf den Stick zu kopieren,
+tippen Sie in einem Terminalfenster den folgenden <i>dd</i>-Befehl mit angepassten Pfaden ein. Setzen Sie dabei nach
+<i>if=</i> den Pfad und Namen der IMG-Datei ein und nach <i>of=</i> den Pfad zu Ihrem USB-Stick.<br /><br />
+<code>sudo dd if=/home/lmd/downloads/image.img of=/dev/sdb1 bs=1M</code>
+<br /><br />
+Bestätigen Sie mit Ihrem Benutzerpasswort. Falls Ihre Distribution nicht sudo verwendet, verschaffen Sie sich zunächst mit <i>su</i> und der Eingabe Ihres root-Passworts Administratorrechte und tippen
+den Befehl dann ohne vorangestelltes <i>sudo</i> ein. Das Ausführen des Befehls
+dauert eine Weile, die Konsole gibt in dieser Zeit keine Rückmeldung. Warten Sie
+einfach ab, bis der Prompt erneut erscheint, dann können Sie den USB-Stick verwenden.
+</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+</div>
+
+<div id="footer">
+<div id="footercontact">
+<a href="pcw_impressum.html">Kontakt | Impressum</a>
+</div>
+<div id="copy">Copyright &copy; 2017 David Wolski </div>
+</div>
+</body>
+</html>

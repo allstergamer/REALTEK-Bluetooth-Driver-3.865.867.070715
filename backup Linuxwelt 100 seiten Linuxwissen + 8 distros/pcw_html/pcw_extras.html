@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>LinuxWelt Ausgabe 1/2018 - Extras und Tools</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Language" content="de" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<link href="pcw_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("div#tux").fadeIn(2000);
+});
+$(function() {
+  $('div.bild a').lightBox();
+});
+</script>
+</head>
+<body>
+<div id="pagewrapper">
+<div id="header_logo"><a href="../index.html"></a></div>
+<div id="header"></div>
+<div id="header_shadow"></div>
+
+  <div id="sidebar">
+    <ul>
+    <li><a href="../index.html">&Uuml;bersicht</a></li>
+    <li><a href="pcw_distris.html">Systeme<br/>auf DVD</a></li>
+    <li><a href="pcw_software.html">Software auf <br/>DVD</a></li>
+    <li><a href="pcw_extras.html">Extras und Tools</a></li>
+    <li><a href="pcw_anleitungen.html">Anleitungen</a></li>
+    <li><a href="pcw_ebook.html">LinuxWelt-Ebook</a>
+    <li><a href="pcw_jahrgang.html">LinuxWelt Jahrgang 2017</a></li>     
+    <li><a href="pcw_check.html">Wahl-O-Mat<br/>Distributionen</a></li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="abo">
+      <a href="http://www.idgshop.de/linuxwelt-magazin-abo-shop.htm?websale8=idg&amp;ci=linuxwelt" target="_blank"><img src="static_pics/pcw_abo.jpg" width="153"
+      alt="linuxabo"/></a>
+      <a href="http://www.idgshop.de/linuxwelt-magazin-abo-shop.htm?websale8=idg&amp;ci=linuxwelt" target="_blank">LinuxWelt im Abo</a>
+    </div>
+    <br/>
+    <br/>
+    <div id="sociallinks">
+      <a href="http://www.pcwelt.de/computer-technik/betriebssystem-software/linux" target="_blank"><img src="static_pics/www.png" width="119" alt="PC WELT Im Web"/></a><br/>
+      <a href="http://www.facebook.com/pcwelt" target="_blank"><img src="static_pics/facebook.png" width="119" alt="PC WELT auf Facebook"/></a><br/>
+      <a href="http://twitter.com/pcwelt" target="_blank"><img src="static_pics/twitter.png" width="119" alt="PC WELT auf Twitter"/></a>
+    </div>
+  </div>
+
+  <div id="main">
+<br /><br />
+<div class="headline"><span class="left"></span><span class="inner">
+Extras und Tools
+</span><span class="right"></span></div>
+<br />
+<h3>Praktische Hilfen für den Linux-Alltag</h3>
+<div id="inhalt">
+<b>Inhalt</b></a><br>
+<a href="#section1">Super Grub Disk 2</a><br>
+<a href="#section3">Plop Bootmanager 5</a><br>
+<a href="#section4">Hardware Detection Tool 0.5.2</a><br>
+<a href="#section5">Memtest 86+ 5.01</a><br>
+<a href="#section6">DBAN 2.3.0</a><br>
+
+</div>
+<p>Neben den Linux-Live-Systemen und Distributionen finden Sie auf dieser DVD noch einige weitere startfähige Tools, die eine praktische Hilfe für Notfälle und für die Hardware-Diagnose bieten. Diese hier vorgestellten Tools und Programme können Sie über das Multibootmenü von DVD booten. Gehen Sie dazu ins Untermenü "Extras und Tools", und wählen Sie dort den gewünschten Eintrag aus. <br />
+</p>
+<br />
+</p> <hr/><br clear="all" /> </p>
+<h3 id="section1">Super Grub Disk 2</h3>
+<div class="bild"><a href="static_pics/sgd2.png" title="Super Grub Disk 2"><img src="static_pics/sgd2.png" border="0" alt="Screenshot Super Grub Disk 2" width=400></a></div>
+<p>Der Bootloader Grub 2 dient den meisten Linux-Distributionen als Bootloader und Bootmanager. Auch bei 64-Bit-Systemen, die mit UEFI arbeiten, kümmert sich Grub 2 um die Feinheiten und Optionen zum Start eines Linux-Systems. Auf der Heft-DVD finden Sie das Tool Super Grub Disk 2, das sich als Starthilfe für Linux-Systeme eignet, wenn der Bootloader Grub 2 überschrieben wurde (etwa nach bei einer Windows-Installation). Super Grub Disk 2 steht unter der GNU General Public License.<br />
+<br />
+<strong>Funktionen:</strong> Bei Super Grub Disk 2 handelt es sich um einen startfähigen Bootloader, der bereits installierte Systeme mit Grub 2 booten kann, auch wenn deren Bootumgebung nicht mehr vorhanden ist. Diese Startumgebung kann zwar Grub 2 nicht reparieren, aber ein Linux-System starten, um dann von dort aus den Bootloader neu zu schreiben.<br />
+<br />
+<b>Bedienung:</b> Nach dem Start von Super Grub Disk 2 wählen Sie aus dem Menü <em>Detect any GRUB2 installation (even if mbr is overwritten)</em>. Anschließend bestätigen Sie die Auswahl <em>Load /boot/grub/core.img from (hdx, y)</em>, wobei der Platzhalter <em>x</em> hier für die Festplattenbezeichnung steht und <em>y</em> für die Partition. Damit identifizieren Sie die gewünschte Grub-2-Installation, falls mehrere auf der Festplatte vorhanden sind. Der Gerätename <em>(hd0, 1)</em>  steht beispielsweise für die zweite Partition (1) auf der ersten (0) Festplatte. <br />
+<br />
+<br />
+<strong>Mehr Infos:</strong> <a href="http://www.supergrubdisk.org" target="_blank">www.supergrubdisk.org</a> <br />
+</p>
+</p> <hr/><br clear="all" /> </p>
+<h3 id="section3">Plop Bootmanager 5</h3>
+<div class="bild"><a href="static_pics/plop.png" title="Der Plop Bootmanager"><img src="static_pics/plop.png" border="0" alt="Bild Plop" width=400></a></div>
+<p>
+Dieses kleine Programm ist eine Hilfe, um verschiedene Medien und Betriebssysteme zu booten Der Plop Bootmanager verfügt über einen eigenen Treiber für USB-Geräte und CD/DVD-ROM-Laufwerke. So kann Plop von diesen Laufwerken booten, auch wenn es das BIOS des PCs nicht unterstützt. Der Plop Bootmanager ist Freeware und wurde von Elmar Hanlhofer geschrieben. Das Programm darf kostenlos für private und kommerzielle Zwecke genutzt werden.<br />
+<br />
+<strong>Funktionen:</strong> Plop Bootmanager startet Betriebssysteme von Festplatte, USB-Laufwerken, CD/DVD und von Diskette. Dabei spielt es keine Rolle, ob das BIOS diese Funktion bietet, da der Plop Bootmanager seine eigenen Treiber mitbringt. In einem Bootmenü können Sie das gewünschte Gerät auswählen und davon booten.<br />
+<br />
+<strong>Bedienung:</strong> Nach dem Start von Plop können Sie über ein Menü mit den Pfeiltasten folgende Geräte auswählen: Erste Partition auf der ersten Festplatte (hda), zweite Partition auf der ersten Festplatte (hda), Floppy, CD-ROM und USB. Plop wird das ausgewählte Gerät nach einem Bootsektor und einem Bootloader durchsuchen und das dort installierte System starten, falls es unterstützt wird. Im Menü können Sie über <em>Setup -> Profiles</em> auch andere Festplatten und Partitionen auswählen, indem Sie die gewünschte Partition auswählen und die Option <em>Show in Main Menu</em> mit der Enter-Taste auf <em>Yes</em> setzen. Mit der ESC-Taste können Sie eine Menü-Ebene jeweils verlassen und zum vorherigen Menü zurückkehren.<br />
+<br />
+<strong>Mehr Infos:</strong> <a href="http://www.plop.at/de/bootmanagers.html" target="_blank">www.plop.at</a> <br />
+</p>
+</p> <hr/><br clear="all" /> </p>
+<h3 id="section4">Hardware Detection Tool 0.5.2</h3>
+<div class="bild"><a href="static_pics/hdt.png" title="Das Hardware Detection Tool (HDT)"><img src="static_pics/hdt.png" border="0" alt="Bild HDT" width=400></a></div>
+<p>Dieses Tool hilft dabei, schnell einen Überblick zur Hardware eines Systems zu bekommen. Das Hardware Detection Tool ist ideal, wenn Sie die Hardware-Konfiguration eines PCs untersuchen möchten, auf dem noch kein Betriebssystem installiert ist. Es steht unter der GNU General Public License. <br />
+<br />
+<strong>Funktionen:</strong> Das Hardware Detection Tool ist eigentlich nur ein Modul für den Syslinux-Bootloader. Es zeigt Basisinformationen zur Hardware auf x86-kompatiblen Systemen an. Mit einem textbasierten Menü lassen sich die Geräte des PCs nach Kategorie untersuchen, um Typ und Namen einer Komponente heraus zu finden. Über diese Hardware kann das Hardware Detection Tool Auskunft geben:  CPU, PCI-Karten, Speicher, DMI-Geräte (Hauptplatine), Festplatten und VESA-Fähigkeiten der Grafikkarte.<br />
+<br />
+<strong>Bedienung:</strong> Wenn Sie das Hardware Detection Tool von DVD über <em>Extras -> Hardware Detection Tool (HDT)</em> starten, können Sie in einem Menü auswählen, ob Sie ein textbasiertes Menü (Menu Mode) oder die Kommandozeilenversion nutzen möchten (CLI). Für eine komfortable Übersicht wählen Sie den „Menu mode“, um die gefundenen Geräte anhand ihrer Kategorie einzeln zu untersuchen. Für eine schnelle Gesamtübersicht ist der Menüpunkt <em>CLI (Auto Summary)</em> nützlich.<br />
+<br />
+<strong>Mehr Infos:</strong>  <a href="http://hdt-project.org/" target="_blank">http://hdt-project.org/</a><br />
+</p>
+</p> <hr/><br clear="all" /> </p>
+<h3 id="section5">Memtest 86+ 5.01</h3>
+<div class="bild"><a href="static_pics/memtest.png" title="Memtest 86+ in Aktion"><img src="static_pics/memtest.png" border="0" alt="Bild Memtest" width=400></a></div>
+<p>Unzuverlässige und überhitzte RAM-Bausteine sorgen für spontane Abstürze und instabile Systeme. Memtest 86+ 5.01 testet den Arbeitsspeicher eines Rechners. Es ist ein eigenständiges Diagnoseprogramm mit Teilen des Linux-Kernel 1.2.1 und läuft auf jedem PC, inklusive der 64-Bit-Plattformen und Intel-basierten Apple-Computern. Memtest 86+ 5.01 ist eine Weiterentwicklung des ursprünglichen Memtest, das längere Zeit nicht mehr aktualisiert wurde. Das Programm steht unter der GNU Public License.<br />
+<br />
+<strong>Funktionen: </strong>Um eventuelle Fehler in Speicherbausteinen zu finden, schreibt Memtest 86+ Testmuster in jede Speicheradresse, liest die Testmuster anschließend wieder aus und vergleicht diese. Wenn hier ein Unterschied besteht, weist dies auf einen fehlerhaften Speicherbaustein hin. Ein Memtest-Durchlauf kann je nach CPU-Geschwindigkeit und Speichergröße mehrere Stunden dauern. Wenn Memtest Fehler findet, muss dies nicht zwangsläufig an defekten RAM-Bausteinen liegen. Es kann sich auch um Probleme mit der CPU oder mit der Hauptplatine handeln. Bei aktuellen PCs ist der Arbeitsspeicher allerdings bei weitem die häufigste Fehlerquelle.<br />
+<br />
+<strong>Bedienung:</strong> Nach dem Start von Memtest 86+ beginnt das Programm automatisch mit Tests. In diesem Modus durchläuft Memtest 86+ neun verschiedene Testreihen. Mit der Escape-Taste können Sie den Test jederzeit unterbrechen und den PC neu starten. Mit der C-Taste können Sie das Menü aufrufen und dort mit der Taste [1] jeden Test einzeln auswählen. Zeitaufwändig ist der Durchlauf <em>Bit Fade Test</em>, bei dem Memtest erst den Speicher mit Nullen beschreibt, dann 90 Minuten wartet und dann erst den Speicherinhalt vergleicht, ob sich Bits geändert haben. Diese Testreihe allein dauert etwa drei Stunden.<br />
+<br />
+<strong>Mehr Infos:</strong> <a href="http://www.memtest.org" target="_blank">www.memtest.org</a><br />
+</p>
+</p> <hr/><br clear="all" /> </p>
+<h3 id="section6">DBAN 2.3.0</h3>
+<div class="bild"><a href="static_pics/dban.png" title="Das Löschwerkzeug DBAN 2.3.0"><img src="static_pics/dban.png" border="0" alt="Das Löschwerkzeug DBAN 2.3.0" width=400></a><span>Zum Vergrößern anklicken<span></div>
+<p>Darik's Boot and Nuke, kurz DBAN, löscht Daten auf magnetischen Festplatten endgültig, so dass anschließend auch Wiederherstellungstools keine Information mehr zeigen. Eine gründliche Löschaktion ist vor der Weitergabe eines Rechners oder einer Festplatte nützlich, damit nicht auch die zuvor darauf gespeicherten, persönlichen Daten irrtümlich weiter gegeben werden. DBAN unterstützt dabei mehrere Löschmethoden mit Überschreibmodus, um eine Festplatte unwiderruflich zu löschen. Das Tools steht unter der GNU Public License<br />
+<br />
+<strong>Funktionen: </strong>Das Tool ist unabhängig vom installieren Betriebssystem und bootet zunächst einen Linux-Kernel und dann das englischsprachige, textbasierte Menü. Schon mit den Standard-Einstellungen ist der Löschvorgang sicher genug. Ein mehrfaches Überschreiben, auch Gutmann-Methode genannt, ist überflüssig. Denn bei der dichten Speicherstruktur von Festplatten ab 15 GB ist auch eine Analyse mit einem Magnetkraft-Mikroskop nicht ausreichend, um noch einzelne Bits zu rekonstruieren. Dies geht aus einer Studie des US-Institut für Standards und Technologie (NIST) von 2006 hervor. Weil die Löschmethode mittels Überschreiben nur für magnetische Festplatten geeignet ist, sollte DBAN nicht auf Flash-Speicher wie SSDs und USB-Sticks angewandt werden. Bei Flash-Speicher arbeitet DBAN nicht wie vorgesehen. Das ist durch die Art und Weise bedingt, wie die SSD-Firmware die Daten auf die Speicherzellen verteilt: Der Wear-Leveling-Algorithmus verlängert die Lebensdauer der Flash-Speicherzellen und sorgt dafür, dass die Daten stets auf verschiedenen Bereichen der SSD geschrieben werden. Ein Überschreiben hätte also nicht den gewünschten Effekt.<br />
+<br />
+<strong>Bedienung:</strong> Der Booteintrag für DBAN findet sich im Multibootmenü unter "Extras und Tools" ganz am Ende der Liste. Nach dem Start von DBAN wählt man mit den Pfeiltasten die gewünschte Festplatte aus und ein Druck auf die Leertaste markiert das Laufwerk. Mit der F10-Taste startet DBAN die Löschaktion mit dem voreingestellten Muster. Die Taste M öffnet ein Untermenü, um eine anderes Muster zum Überschreiben auszuwählen. <br />
+<br />
+<strong>Mehr Infos:</strong> <a href="http://www.dban.org/download" target="_blank">http://www.dban.org/download</a><br />
+</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
+</div>
+
+<div id="footer">
+
+<div id="footercontact">
+<a href="pcw_impressum.html">Kontakt | Impressum</a>
+</div>
+
+<div id="copy">Copyright &copy; 2017 David Wolski </div>
+
+</div>
+
+</body>
+</html>
