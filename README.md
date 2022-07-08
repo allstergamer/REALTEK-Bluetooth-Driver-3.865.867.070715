@@ -7,6 +7,10 @@ that's the driver for the REALTEK PCIE Wireless LAN and Bluetooth Driver and Uti
 Name=REALTEK Bluetooth Driver<BR>
 Version=3.865.867.070715<BR><BR>
 
+#### windows 10 error output: <br>
+> drivername:<br>
+> Realtek Semiconductor Corp. (RtkBtFilter) Bluetooth (01/24/2022 2.9.1038.3002)<br>
+
 [Bluetooth_Driver]
 <br>
 TitleName=REALTEK PCIE Wireless LAN Driver<br>
@@ -36,3 +40,5 @@ InstallShield_Version=1041.1038.1040.220124<br>
 
 # read isconfig.ini for more informations
 ## looks like it has WiFi included but isn't activ
+
+
